@@ -35,10 +35,8 @@ def crossover():
 def createMac(workdir,a,b):
     scriptCreateMac = open(workdir + r'\createMac.txt', 'w')
     scriptCreateMac.write(r"""
-SECD,"""+str(a)+"""
-SECT,6,BEAM,CSOLID
-SECD,"""+str(b)+"""
-
+a ="""+str(a)+"""
+b ="""+str(b)+"""
 """)
     scriptCreateMac.close()
 
