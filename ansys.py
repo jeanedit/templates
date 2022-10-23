@@ -28,6 +28,7 @@ def runAPDL(ansyscall,workingdir,scriptFilename):
                               '{:%Y%m%d%H%M%S}'.format(datetime.datetime.now())+
                               ".out")
     # keep the standard ansys jobname
+    # np - number of cores
     jobname = "file"
     callString = ("\"{}\" -p ansys -smp -np 6"
               " -dir \"{}\" -j \"{}\" -s read"
